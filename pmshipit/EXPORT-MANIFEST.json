@@ -1,0 +1,352 @@
+{
+  "format_version": 1,
+  "product": "SHIP IT! — A Product Manager Simulator",
+  "exported_version": 2,
+  "version_label": "Current version with Office Life, Character Movement & Readability update",
+  "source_commit": "bf5f51406188ea2b314451b8d82ef6432219ba07",
+  "exported_at_utc": "2026-10-07T09:08:02.259291+00:00",
+  "stack": "HTML/CSS, native JavaScript ES modules, Three.js 0.183.2, GSAP 3.15.0",
+  "runtime_environment_variables": [],
+  "application_files": [
+    {
+      "path": "dist/activities.mjs",
+      "bytes": 2656,
+      "upstream_sha256": "1a62f0f88edd1f632e56de8b2beaad595b130896a8f6544a6c4e4f23d29ff358",
+      "export_sha256": "1a62f0f88edd1f632e56de8b2beaad595b130896a8f6544a6c4e4f23d29ff358",
+      "unchanged": true
+    },
+    {
+      "path": "dist/app.mjs",
+      "bytes": 59332,
+      "upstream_sha256": "6695230871c08c8186040722705c4f13d7ffdf7eeeae3ef93fb155ba7be663af",
+      "export_sha256": "6695230871c08c8186040722705c4f13d7ffdf7eeeae3ef93fb155ba7be663af",
+      "unchanged": true
+    },
+    {
+      "path": "dist/assets/favicon.svg",
+      "bytes": 212,
+      "upstream_sha256": "fae75e0ad344e35748424e9128a6405e27aeda70609d15168a7db8879db82ae9",
+      "export_sha256": "fae75e0ad344e35748424e9128a6405e27aeda70609d15168a7db8879db82ae9",
+      "unchanged": true
+    },
+    {
+      "path": "dist/assets/og-preview.png",
+      "bytes": 183325,
+      "upstream_sha256": "59389ebacb8231acc06ee6d6ff34f0f9be2a6fc6b07af269546ffd09bd61586e",
+      "export_sha256": "59389ebacb8231acc06ee6d6ff34f0f9be2a6fc6b07af269546ffd09bd61586e",
+      "unchanged": true
+    },
+    {
+      "path": "dist/assets/studio-bold.ttf",
+      "bytes": 333612,
+      "upstream_sha256": "c90e629e932f768909bdce1481ccd259d8aff1490a4bc1cf94d5413492317336",
+      "export_sha256": "c90e629e932f768909bdce1481ccd259d8aff1490a4bc1cf94d5413492317336",
+      "unchanged": true
+    },
+    {
+      "path": "dist/assets/studio-medium.ttf",
+      "bytes": 341324,
+      "upstream_sha256": "e801a0867295367000c6dd3c337622ae4aaff85786ddbfbdb985ce774fe3cd62",
+      "export_sha256": "e801a0867295367000c6dd3c337622ae4aaff85786ddbfbdb985ce774fe3cd62",
+      "unchanged": true
+    },
+    {
+      "path": "dist/assets/studio-mono.ttf",
+      "bytes": 205748,
+      "upstream_sha256": "b35dd9d2131d5d83a9b87fe9ad22c6288fa3d17688d43302c14da29812417d63",
+      "export_sha256": "b35dd9d2131d5d83a9b87fe9ad22c6288fa3d17688d43302c14da29812417d63",
+      "unchanged": true
+    },
+    {
+      "path": "dist/assets/studio-regular.ttf",
+      "bytes": 353824,
+      "upstream_sha256": "52c1afa489ae7bfd893af6cdd9f1af258005703600449e70d338caabcff507e5",
+      "export_sha256": "52c1afa489ae7bfd893af6cdd9f1af258005703600449e70d338caabcff507e5",
+      "unchanged": true
+    },
+    {
+      "path": "dist/data.mjs",
+      "bytes": 43931,
+      "upstream_sha256": "d4d6ae0f32383e71767e01da19e1c418192a1dc5385b4108af9ab60463f16b64",
+      "export_sha256": "d4d6ae0f32383e71767e01da19e1c418192a1dc5385b4108af9ab60463f16b64",
+      "unchanged": true
+    },
+    {
+      "path": "dist/engine.mjs",
+      "bytes": 17204,
+      "upstream_sha256": "305c1b850e6e3c8b1cafb4e790ddaaa3ca2ca0c6a8263cedc6746eef8206adeb",
+      "export_sha256": "305c1b850e6e3c8b1cafb4e790ddaaa3ca2ca0c6a8263cedc6746eef8206adeb",
+      "unchanged": true
+    },
+    {
+      "path": "dist/index.html",
+      "bytes": 8358,
+      "upstream_sha256": "b9e7edf9fd789b92be039f1faf500ab941cdeead6ab9bf56ac66ef1754e67bf5",
+      "export_sha256": "2b3303246d3d77d33a597fccdddbf58499fdeffa4369be2d48b01a479c980b16",
+      "unchanged": false
+    },
+    {
+      "path": "dist/navigation.mjs",
+      "bytes": 4468,
+      "upstream_sha256": "55cc7d96f3ff32ec8a9873ea12fd4b5579d9401745b9a7c7c909eb9fa82b0cd4",
+      "export_sha256": "55cc7d96f3ff32ec8a9873ea12fd4b5579d9401745b9a7c7c909eb9fa82b0cd4",
+      "unchanged": true
+    },
+    {
+      "path": "dist/office-life.mjs",
+      "bytes": 16308,
+      "upstream_sha256": "6800f2debe85c7aef73c8661584fb4ed9f4bec05a8bc576c939dea7eb6674487",
+      "export_sha256": "6800f2debe85c7aef73c8661584fb4ed9f4bec05a8bc576c939dea7eb6674487",
+      "unchanged": true
+    },
+    {
+      "path": "dist/office.mjs",
+      "bytes": 22512,
+      "upstream_sha256": "0f80360596d8226814172f3c2a705232df407ef180e7c333dbf4eae1c75c1c60",
+      "export_sha256": "0f80360596d8226814172f3c2a705232df407ef180e7c333dbf4eae1c75c1c60",
+      "unchanged": true
+    },
+    {
+      "path": "dist/readability.css",
+      "bytes": 30288,
+      "upstream_sha256": "45a0199adfc2bb05675df07ee97a4ab5872398d865369e73ac11e4b4fe12b526",
+      "export_sha256": "45a0199adfc2bb05675df07ee97a4ab5872398d865369e73ac11e4b4fe12b526",
+      "unchanged": true
+    },
+    {
+      "path": "dist/style.css",
+      "bytes": 41287,
+      "upstream_sha256": "7283cb9321b4d8a5cb8abf5fd293a01d47f2e2dc38c10c1c016bc240457840ba",
+      "export_sha256": "7283cb9321b4d8a5cb8abf5fd293a01d47f2e2dc38c10c1c016bc240457840ba",
+      "unchanged": true
+    },
+    {
+      "path": "dist/vendor/THREE-LICENSE.txt",
+      "bytes": 1081,
+      "upstream_sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+      "export_sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+      "unchanged": true
+    },
+    {
+      "path": "dist/vendor/gsap.min.js",
+      "bytes": 72927,
+      "upstream_sha256": "92bb9a96476f983d212a2bc4f54c889039c1696dd4461d40a736860938570fbb",
+      "export_sha256": "92bb9a96476f983d212a2bc4f54c889039c1696dd4461d40a736860938570fbb",
+      "unchanged": true
+    },
+    {
+      "path": "dist/vendor/three.core.js",
+      "bytes": 1421746,
+      "upstream_sha256": "6a7fc83437818534d5e30ce8c8e0ce76230ca2245446ea24744bb3d88c436583",
+      "export_sha256": "6a7fc83437818534d5e30ce8c8e0ce76230ca2245446ea24744bb3d88c436583",
+      "unchanged": true
+    },
+    {
+      "path": "dist/vendor/three.module.js",
+      "bytes": 639046,
+      "upstream_sha256": "e8ac51bc2f6b7eb17bc88c6540eb0a1fee872f848949373de39d55f34b5c5a8f",
+      "export_sha256": "e8ac51bc2f6b7eb17bc88c6540eb0a1fee872f848949373de39d55f34b5c5a8f",
+      "unchanged": true
+    }
+  ],
+  "portable_changes": [
+    "Excluded .openai hosting identity and Git metadata",
+    "Removed old hosting-specific og:url and changed og:image to the bundled local asset",
+    "Added local Node scripts, npm lockfile, Vercel configuration, documentation, and additional validation tests"
+  ],
+  "application_preservation": {
+    "total_files": 20,
+    "byte_identical_files": 19,
+    "only_changed_application_file": "dist/index.html",
+    "visible_gameplay_or_design_changes": false
+  },
+  "validation": {
+    "clean_install": "passed",
+    "production_build": "passed",
+    "automated_tests": {
+      "passed": 18,
+      "failed": 0
+    },
+    "browser_visual_qa": "not available",
+    "zip_integrity": "CRC and byte comparison passed for all packaged members"
+  },
+  "build_output_directory": "build",
+  "build_output_included_in_zip": false,
+  "included_project_files": [
+    {
+      "path": ".env.example",
+      "bytes": 132,
+      "sha256": "5863dc02a3a6f43d66c39f5c39138b22623df1a13132256feff2d9cfb9832b68"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 101,
+      "sha256": "13a5d1b2d12e17976548878875a9890fd207980540188fac3b5b7d912850b412"
+    },
+    {
+      "path": ".nvmrc",
+      "bytes": 3,
+      "sha256": "68ca3fba3b7e864770cb61aeb306d4bd4354b68ab4dd38450860c5d823e42a53"
+    },
+    {
+      "path": "README.md",
+      "bytes": 7410,
+      "sha256": "7c2c4e528fc5a57d30116ac330a2212b5867eb66c120930efcf832f5ee49bbc9"
+    },
+    {
+      "path": "VALIDATION.md",
+      "bytes": 12920,
+      "sha256": "ac126c184f1749073d77ccf8aecba151f7024a4be382e013cf19af20da5264d6"
+    },
+    {
+      "path": "dist/activities.mjs",
+      "bytes": 2656,
+      "sha256": "1a62f0f88edd1f632e56de8b2beaad595b130896a8f6544a6c4e4f23d29ff358"
+    },
+    {
+      "path": "dist/app.mjs",
+      "bytes": 59332,
+      "sha256": "6695230871c08c8186040722705c4f13d7ffdf7eeeae3ef93fb155ba7be663af"
+    },
+    {
+      "path": "dist/assets/favicon.svg",
+      "bytes": 212,
+      "sha256": "fae75e0ad344e35748424e9128a6405e27aeda70609d15168a7db8879db82ae9"
+    },
+    {
+      "path": "dist/assets/og-preview.png",
+      "bytes": 183325,
+      "sha256": "59389ebacb8231acc06ee6d6ff34f0f9be2a6fc6b07af269546ffd09bd61586e"
+    },
+    {
+      "path": "dist/assets/studio-bold.ttf",
+      "bytes": 333612,
+      "sha256": "c90e629e932f768909bdce1481ccd259d8aff1490a4bc1cf94d5413492317336"
+    },
+    {
+      "path": "dist/assets/studio-medium.ttf",
+      "bytes": 341324,
+      "sha256": "e801a0867295367000c6dd3c337622ae4aaff85786ddbfbdb985ce774fe3cd62"
+    },
+    {
+      "path": "dist/assets/studio-mono.ttf",
+      "bytes": 205748,
+      "sha256": "b35dd9d2131d5d83a9b87fe9ad22c6288fa3d17688d43302c14da29812417d63"
+    },
+    {
+      "path": "dist/assets/studio-regular.ttf",
+      "bytes": 353824,
+      "sha256": "52c1afa489ae7bfd893af6cdd9f1af258005703600449e70d338caabcff507e5"
+    },
+    {
+      "path": "dist/data.mjs",
+      "bytes": 43931,
+      "sha256": "d4d6ae0f32383e71767e01da19e1c418192a1dc5385b4108af9ab60463f16b64"
+    },
+    {
+      "path": "dist/engine.mjs",
+      "bytes": 17204,
+      "sha256": "305c1b850e6e3c8b1cafb4e790ddaaa3ca2ca0c6a8263cedc6746eef8206adeb"
+    },
+    {
+      "path": "dist/index.html",
+      "bytes": 8358,
+      "sha256": "2b3303246d3d77d33a597fccdddbf58499fdeffa4369be2d48b01a479c980b16"
+    },
+    {
+      "path": "dist/navigation.mjs",
+      "bytes": 4468,
+      "sha256": "55cc7d96f3ff32ec8a9873ea12fd4b5579d9401745b9a7c7c909eb9fa82b0cd4"
+    },
+    {
+      "path": "dist/office-life.mjs",
+      "bytes": 16308,
+      "sha256": "6800f2debe85c7aef73c8661584fb4ed9f4bec05a8bc576c939dea7eb6674487"
+    },
+    {
+      "path": "dist/office.mjs",
+      "bytes": 22512,
+      "sha256": "0f80360596d8226814172f3c2a705232df407ef180e7c333dbf4eae1c75c1c60"
+    },
+    {
+      "path": "dist/readability.css",
+      "bytes": 30288,
+      "sha256": "45a0199adfc2bb05675df07ee97a4ab5872398d865369e73ac11e4b4fe12b526"
+    },
+    {
+      "path": "dist/style.css",
+      "bytes": 41287,
+      "sha256": "7283cb9321b4d8a5cb8abf5fd293a01d47f2e2dc38c10c1c016bc240457840ba"
+    },
+    {
+      "path": "dist/vendor/THREE-LICENSE.txt",
+      "bytes": 1081,
+      "sha256": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc"
+    },
+    {
+      "path": "dist/vendor/gsap.min.js",
+      "bytes": 72927,
+      "sha256": "92bb9a96476f983d212a2bc4f54c889039c1696dd4461d40a736860938570fbb"
+    },
+    {
+      "path": "dist/vendor/three.core.js",
+      "bytes": 1421746,
+      "sha256": "6a7fc83437818534d5e30ce8c8e0ce76230ca2245446ea24744bb3d88c436583"
+    },
+    {
+      "path": "dist/vendor/three.module.js",
+      "bytes": 639046,
+      "sha256": "e8ac51bc2f6b7eb17bc88c6540eb0a1fee872f848949373de39d55f34b5c5a8f"
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 230,
+      "sha256": "b9901d2169c7aeb25d9d5dc1423344139a81b35119fff09d9e4f48171602cd35"
+    },
+    {
+      "path": "package.json",
+      "bytes": 438,
+      "sha256": "c5da5a3af61074e64a8183da53763a520f92b5e8933ac1a64ac5920da852834a"
+    },
+    {
+      "path": "scripts/build.mjs",
+      "bytes": 1051,
+      "sha256": "4db8c2efc4938570451d58b441d7e3703a1b8a2ebd64f890a0eb9aab59240a14"
+    },
+    {
+      "path": "scripts/serve.mjs",
+      "bytes": 2343,
+      "sha256": "bf6de4c823cc24f9b6d5121af2ee21c4d3c62188c456eb5a275f34b28fada13e"
+    },
+    {
+      "path": "scripts/verify.mjs",
+      "bytes": 4769,
+      "sha256": "743f47e2760021782daa97f2c3ae3960acb41e004abe2e6d4733205f70a1c064"
+    },
+    {
+      "path": "tests/controls.test.mjs",
+      "bytes": 3903,
+      "sha256": "1c7d87c709814869cede41518817aa22d671ae20be206f612e7f96c1ef1f691b"
+    },
+    {
+      "path": "tests/office-life.test.mjs",
+      "bytes": 5667,
+      "sha256": "a5525c5b265417a238611fa9cbb8571ec5a6da69f44aa5f682f386d69da5b03a"
+    },
+    {
+      "path": "tests/simulation.test.mjs",
+      "bytes": 4289,
+      "sha256": "b203890e22dcec84bffbf935955af84c8bbed2f8ee3ef18ac9f656702fdb1c9d"
+    },
+    {
+      "path": "tests/ui-smoke.test.mjs",
+      "bytes": 5096,
+      "sha256": "407648940fc99627c51d56aee2fa7f44e9bc95e24371d8413396a4d88493ac34"
+    },
+    {
+      "path": "vercel.json",
+      "bytes": 173,
+      "sha256": "073652122add6a002ac71d7f427f486e2906ac6317ffed50d796ba5b0aef2b94"
+    }
+  ]
+}

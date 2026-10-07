@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f2eb">
+  <title>SHIP IT! — Product Manager Simulator by Vinh Nguyen</title>
+  <meta name="description" content="An interactive 3D Product Manager simulator where every meeting, roadmap choice, launch decision and product trade-off changes the outcome.">
+  <meta property="og:title" content="SHIP IT! — 30 days. One product. Too many decisions.">
+  <meta property="og:description" content="A 3D product management simulation by Vinh Nguyen. Build the roadmap. Manage the tension. Make the launch call.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/og-preview.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="readability.css">
+  <script src="vendor/gsap.min.js" defer></script>
+  <script type="module" src="app.mjs"></script>
+</head>
+<body>
+  <div id="loading" class="loading-screen" aria-label="Loading office"><span class="brand loading-brand">SHIP IT<span>!</span></span><div class="loader-building"><i></i><i></i><i></i><i></i><i></i></div><p>Preparing your first day<span class="loading-dots">...</span></p><div class="loading-track"><span id="loading-bar"></span></div><span id="loading-percent" class="mono">0%</span></div>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="SHIP IT home">SHIP IT<span>!</span><i></i></a>
+    <div class="header-descriptor">A PRODUCT MANAGER SIMULATOR</div>
+    <div class="header-right"><span class="simulation-status"><i></i> YOUR NEXT BIG DECISION</span><button id="guide-btn" class="text-button">How to play <span class="question-mark">?</span></button><button id="sound-btn" class="icon-button" aria-label="Enable sound" title="Enable sound"></button><button id="menu-btn" class="icon-button" aria-label="Open game settings" title="Game settings"></button></div>
+  </header>
+  <main>
+    <div class="journey-row"><span class="eyebrow journey-label">THE PRODUCT JOURNEY</span><nav id="journey" aria-label="Product journey"></nav><span class="journey-date" id="journey-date">DAY 01 <span>/ 30</span></span></div>
+    <section class="workspace" aria-label="Product management simulator">
+      <div class="world-column">
+        <div class="office-heading"><div><div class="eyebrow"><i class="small-dot"></i> ORBIT HQ · YOUR WORKSPACE</div><h1 id="office-title">Big decisions.<br><span>Small office.</span></h1></div><div class="office-heading-right"><span class="outline-tag"><i></i> STARTUP MODE</span><p id="world-hint">30 days. One product.<br>Too many decisions.</p></div></div>
+        <div class="office-world" id="office-world"><canvas id="office-canvas" aria-label="Interactive 3D startup office. Use the room navigation below for keyboard access."></canvas><div id="room-labels"></div><div class="office-glow"></div><span class="scene-coordinate mono">37° 46′ N &nbsp; 122° 25′ W</span><div class="health-float"><i id="health-light"></i><span>PRODUCT HEALTH<br><strong id="health-word">Taking shape</strong></span><button id="health-btn" class="mini-arrow" aria-label="Inspect product health">↗</button></div><div class="camera-controls"><button id="zoom-in" class="icon-button" aria-label="Zoom in">+</button><button id="zoom-out" class="icon-button" aria-label="Zoom out">−</button><span></span><button id="reset-camera" class="icon-button" aria-label="Return to office overview" title="Office overview"></button></div><div class="scene-instruction"><span class="drag-icon">↔</span> Drag to rotate <i></i> Scroll to zoom <i></i> Click / tap to walk</div><div id="scene-fallback" class="scene-fallback" hidden></div></div>
+        <div class="office-presence" id="office-presence"><span class="mono" id="office-clock">DAY 01 · 09:00</span><span id="office-mood">A normal day. For now.</span></div>
+        <div class="proximity-hud" id="proximity-hud"><span>YOU ARE THE PM</span><button id="context-btn" hidden><kbd>E</kbd><strong id="context-label">Work at your desk</strong><span>↗</span></button><p id="movement-hint">WASD / arrows to walk · Click or tap a destination</p></div>
+        <div class="office-bottom"><button id="overview-btn" class="room-overview active"></button><div class="room-tabs" id="room-tabs"></div></div>
+        <div class="office-life-bar"><div><i></i><p id="office-story" aria-live="polite">The team is settling in. Find your next conversation.</p></div><div class="office-actions"><button id="desk-btn">Your desk ↗</button><button id="coffee-btn">Coffee ↗</button><button id="walk-menu-btn">Walk to… ↗</button><button id="follow-btn" aria-pressed="true">Follow PM ✓</button></div></div>
+        <div class="insight-strip"><span id="insight-icon"></span><p id="daily-insight">Your job isn’t to have all the answers. <strong>It’s to choose what matters.</strong></p><span class="mono">FIELD NOTE <span id="note-number">001</span></span></div>
+      </div>
+      <aside class="day-panel" aria-label="Daily objectives">
+        <div class="day-panel-top"><span class="eyebrow" id="day-label">MONDAY · DAY 01</span><span class="day-badge" id="chapter-badge">DISCOVER</span></div>
+        <div class="day-intro"><h2 id="day-title">Your first day.</h2><p id="day-description">Meet the team.<br>Find the problem.</p></div>
+        <div class="time-budget"><div class="time-icon" id="clock-icon"></div><div><strong id="hours-left">8h</strong><span> left in your day</span></div><span class="mono" id="clock-time">09:00</span></div><div class="time-track"><span id="time-fill"></span></div>
+        <div class="task-heading"><span class="eyebrow">ON YOUR RADAR</span><span id="task-count" class="mono">3 EVENTS</span></div>
+        <div id="tasks" class="task-list"></div>
+        <button class="calendar-shortcut" id="calendar-btn"><span id="calendar-icon"></span><span>Today’s calendar</span><span class="overlap-badge" id="calendar-badge">3 overlapping</span><span>↗</span></button>
+        <div class="focus-row"><span id="focus-icon"></span><span>Focus</span><div class="focus-track"><i id="focus-fill"></i></div><strong id="focus-value">100</strong><span class="focus-outof">/100</span><button id="break-btn" title="Take a 30-minute break" aria-label="Take a break">↗</button></div>
+        <div class="primary-area"><button id="primary-btn" class="primary-button">Start Your First Day <span>↗</span></button><div class="primary-caption" id="primary-caption"><i></i> Your progress saves as you play</div></div>
+      </aside>
+    </section>
+    <section class="health-panel" aria-label="Your product dimensions"><div class="health-panel-title"><span class="eyebrow">THE BIG PICTURE</span><p>Everything is connected.</p></div><div class="dimensions" id="dimensions"></div><button id="analytics-btn" class="health-panel-link" aria-label="Open analytics wall">↗</button></section>
+    <div class="under-workspace"><span><i></i> No perfect answers. Just meaningful trade-offs.</span><button id="timeline-btn" class="text-button">Your decision log <span>↗</span></button></div>
+    <section class="creator"><div><span class="eyebrow">AN INDEPENDENT PRODUCT EXPERIMENT</span><h3>Built by Vinh Nguyen<span>↗</span></h3><p>Product thinker exploring systems, decisions and interactive digital experiences.</p></div><div class="creator-detail"><p>I build product experiments that turn complex product logic, operational trade-offs and decision-making into experiences people can see, explore and understand.</p><a href="https://vinh-nguyen-portfolio-three.vercel.app/" target="_blank" rel="noopener noreferrer">View my Portfolio <span>↗</span></a></div></section>
+    <footer><span class="footer-brand">SHIP IT!</span><span>A Product Manager Simulator</span><span>Product Strategy · Systems Thinking · Interactive Experiences</span><a href="https://vinh-nguyen-portfolio-three.vercel.app/" target="_blank" rel="noopener noreferrer">Portfolio ↗</a></footer>
+  </main>
+  <div id="modal-root"></div><div id="toast" class="toast" role="status" aria-live="polite"></div><div id="interruption-root"></div><div id="work-root"></div>
+</body></html>
